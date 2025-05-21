@@ -126,6 +126,63 @@ main > section {
     margin-bottom: 30px;
 }
 
+
+/* our-feature related style */
+.our-feature {
+    gap: 140px;
+}
+#our-feature-heading {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
+#feature-main-text {
+    margin: 0 0 50px 5px;
+}
+.our-feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+.our-feature-card .our-feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.our-feature-card .our-feature-card-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin: 20px 0;
+
+}
+
+#experience-btn {
+    border: none;
+    padding: 46px 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: 200000;
+} 
+#experience-btn .experience-time {
+    font-size: 4rem;
+    font-weight: 700px;
+    border-radius: 5px;
+}
+#experience-btn .experience-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.our-feature-img img {
+    width: 100%;
+    padding: 50px;
+}
+
+
 /* fact related style */
 .facts-container {
     display: grid;
@@ -197,6 +254,7 @@ main > section {
 @media (max-width: 576px) {
     .navbar, 
     .nav-links,
+    .our-feature,
     .teams {
         flex-direction: column;
         
@@ -239,6 +297,14 @@ main > section {
         padding: 10px 15px;
         font-size: 1rem;
     
+    }
+
+    /* our-feature */
+    .our-feature {
+        gap: 50px;
+    }
+    #experience-btn {
+       display: none;
     }
 }
 
